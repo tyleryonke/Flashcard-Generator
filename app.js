@@ -9,7 +9,7 @@ function BasicFlashcard (front, back) {
 	this.front = front;
 	this.back = back;
 
-	this.appendString = "Type: " + this.type + "\r\n Front: " + this.front + "\r\n Back: " + this.back;
+	this.appendString = "Type: " + this.type + "\r\n    Front: " + this.front + "\r\n    Back: " + this.back;
 	this.appendString += "\r\n";
 
 	fs.appendFile("log.txt", this.appendString, function(error) {
@@ -29,7 +29,7 @@ function ClozeFlashcard (text, cloze) {
 	this.text = text;
 	this.cloze = cloze;
 
-	this.appendString = "Type: " + this.type + "\r\n Front: " + this.front + "\r\n Back: " + this.back;
+	this.appendString = "Type: " + this.type + "\r\n    Front: " + this.front + "\r\n    Back: " + this.back;
 	this.appendString += "\r\n";
 
 	this.showClozeDeleted = function() {
